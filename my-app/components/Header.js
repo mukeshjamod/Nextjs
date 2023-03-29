@@ -1,5 +1,5 @@
 import classes from './Header.module.css';
-
+import Link from 'next/link';
 const Header = () => {
   return (
     <header className={classes.header}>
@@ -7,10 +7,10 @@ const Header = () => {
       <nav>
         <ul>
           <li>
-            <a href='/'>My Products</a>
+            <Link to='/'>My Products</Link>
           </li>
           <li>
-            <a href='/'>My Sales</a>
+            <Link href='/'>My Sales</Link>
           </li>
           <li>
             <button>Logout</button>
